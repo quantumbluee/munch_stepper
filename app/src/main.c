@@ -5,28 +5,37 @@
 
 LOG_MODULE_REGISTER(main_app, LOG_LEVEL_INF);
 
-static const struct stepper_t motor = {
-    .step_pin = {
-        .port = DEVICE_DT_GET(DT_NODELABEL(gpiob)),
-        .pin = 3,
-        .dt_flags = GPIO_ACTIVE_HIGH
-    },
-    .dir_pin = {
-        .port = DEVICE_DT_GET(DT_NODELABEL(gpiob)),
-        .pin = 5,
-        .dt_flags = GPIO_ACTIVE_HIGH
-    },
-    .en_pin = {
-        .port = DEVICE_DT_GET(DT_NODELABEL(gpiob)),
-        .pin = 4,
-        .dt_flags = GPIO_ACTIVE_HIGH
-    },
-    .steps_per_rev = 200,
-    .microsteps = 16
-};
+// GPIO port and pin definitions
+#define STEP_PORT  DT_NODELABEL(gpiob)
+#define STEP_PIN   3
+#define DIR_PORT   DT_NODELABEL(gpiob)
+#define DIR_PIN    5
+#define EN_PORT    DT_NODELABEL(gpiob)
+#define EN_PIN     4
+
+static struct stepper_t motor;
 
 int main(void)
 {
+    const struct device *step_dev = DEVICE_DT_GET(STEP_PORT);
+    const struct device *dir_dev = DEVICE_DT_GET(DIR_PORT);
+    const struct device *en_dev  = DEVICE_DT_GET(EN_PORT);
+
+    motor.step_pin.port = step_dev;
+    motor.step_pin.pin = STEP_PIN;
+    motor.step_pin.dt_flags = GPIO_ACTIVE_HIGH;
+
+    motor.dir_pin.port = dir_dev;
+    motor.dir_pin.pin = DIR_PIN;
+    motor.dir_pin.dt_flags = GPIO_ACTIVE_HIGH;
+
+    motor.en_pin.port = en_dev;
+    motor.en_pin.pin = EN_PIN;
+    motor.en_pin.dt_flags = GPIO_ACTIVE_HIGH;
+
+    motor.steps_per_rev = 200;
+    motor.microsteps = 16;
+
     LOG_INF("Munch Stepper Control App Started");
 
     if (stepper_init(&motor) != 0) {

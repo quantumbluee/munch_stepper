@@ -10367,6 +10367,16 @@ DT_COMPAT_SNPS_ARCV2_INTC := snps,arcv2-intc
 config DT_HAS_SNPS_ARCV2_INTC_ENABLED
 	def_bool $(dt_compat_enabled,$(DT_COMPAT_SNPS_ARCV2_INTC))
 
+DT_COMPAT_SNPS_AV5RHX := snps,av5rhx
+
+config DT_HAS_SNPS_AV5RHX_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_SNPS_AV5RHX))
+
+DT_COMPAT_SNPS_AV5RMX := snps,av5rmx
+
+config DT_HAS_SNPS_AV5RMX_ENABLED
+	def_bool $(dt_compat_enabled,$(DT_COMPAT_SNPS_AV5RMX))
+
 DT_COMPAT_SNPS_CREG_GPIO := snps,creg-gpio
 
 config DT_HAS_SNPS_CREG_GPIO_ENABLED

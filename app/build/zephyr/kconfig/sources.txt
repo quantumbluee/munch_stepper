@@ -3444,6 +3444,9 @@ C:\Users\urvih\munch_stepper\zephyr\soc\snps\nsim\arc_classic\vpx5\Kconfig.soc
 C:\Users\urvih\munch_stepper\zephyr\soc\snps\nsim\arc_v\Kconfig
 C:\Users\urvih\munch_stepper\zephyr\soc\snps\nsim\arc_v\Kconfig.defconfig
 C:\Users\urvih\munch_stepper\zephyr\soc\snps\nsim\arc_v\Kconfig.soc
+C:\Users\urvih\munch_stepper\zephyr\soc\snps\nsim\arc_v\rhx\Kconfig
+C:\Users\urvih\munch_stepper\zephyr\soc\snps\nsim\arc_v\rhx\Kconfig.defconfig
+C:\Users\urvih\munch_stepper\zephyr\soc\snps\nsim\arc_v\rhx\Kconfig.soc
 C:\Users\urvih\munch_stepper\zephyr\soc\snps\nsim\arc_v\rmx\Kconfig
 C:\Users\urvih\munch_stepper\zephyr\soc\snps\nsim\arc_v\rmx\Kconfig.defconfig
 C:\Users\urvih\munch_stepper\zephyr\soc\snps\nsim\arc_v\rmx\Kconfig.soc
