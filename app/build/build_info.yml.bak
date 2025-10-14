@@ -1,5 +1,58 @@
+cmake:
+  application:
+    configuration-dir: 'C:/Users/urvih/munch_stepper/app'
+    source-dir: 'C:/Users/urvih/munch_stepper/app'
+  board:
+    name: 'nucleo_f767zi'
+    path:
+     - 'C:/Users/urvih/munch_stepper/zephyr/boards/st/nucleo_f767zi'
+    qualifiers: 'stm32f767xx'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - 'C:/Users/urvih/munch_stepper/zephyr/dts/bindings'
+    files:
+     - 'C:/Users/urvih/munch_stepper/zephyr/boards/st/nucleo_f767zi/nucleo_f767zi.dts'
+    include-dirs:
+     - 'C:/Users/urvih/munch_stepper/modules/hal/ambiq/dts'
+     - 'C:/Users/urvih/munch_stepper/modules/hal/atmel/include'
+     - 'C:/Users/urvih/munch_stepper/modules/hal/bouffalolab/include'
+     - 'C:/Users/urvih/munch_stepper/modules/hal/bouffalolab/include/zephyr'
+     - 'C:/Users/urvih/munch_stepper/modules/hal/gigadevice/include'
+     - 'C:/Users/urvih/munch_stepper/modules/hal/microchip/include'
+     - 'C:/Users/urvih/munch_stepper/modules/hal/microchip/dts'
+     - 'C:/Users/urvih/munch_stepper/modules/hal/nuvoton/dts'
+     - 'C:/Users/urvih/munch_stepper/modules/hal/nxp/dts'
+     - 'C:/Users/urvih/munch_stepper/modules/hal/stm32/dts'
+     - 'C:/Users/urvih/munch_stepper/modules/hal/ti/dts'
+     - 'C:/Users/urvih/munch_stepper/zephyr/include'
+     - 'C:/Users/urvih/munch_stepper/zephyr/include/zephyr'
+     - 'C:/Users/urvih/munch_stepper/zephyr/dts/common'
+     - 'C:/Users/urvih/munch_stepper/zephyr/dts/vendor'
+     - 'C:/Users/urvih/munch_stepper/zephyr/dts/rx'
+     - 'C:/Users/urvih/munch_stepper/zephyr/dts/x86'
+     - 'C:/Users/urvih/munch_stepper/zephyr/dts/xtensa'
+     - 'C:/Users/urvih/munch_stepper/zephyr/dts/sparc'
+     - 'C:/Users/urvih/munch_stepper/zephyr/dts/riscv'
+     - 'C:/Users/urvih/munch_stepper/zephyr/dts/posix'
+     - 'C:/Users/urvih/munch_stepper/zephyr/dts/arm64'
+     - 'C:/Users/urvih/munch_stepper/zephyr/dts/arm'
+     - 'C:/Users/urvih/munch_stepper/zephyr/dts/arc'
+     - 'C:/Users/urvih/munch_stepper/zephyr/dts'
+  kconfig:
+    files:
+     - 'C:/Users/urvih/munch_stepper/zephyr/boards/st/nucleo_f767zi/nucleo_f767zi_defconfig'
+     - 'C:/Users/urvih/munch_stepper/app/prj.conf'
+    user-files:
+     - 'C:/Users/urvih/munch_stepper/app/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: 'C:/Users/urvih/zephyr-sdk-0.17.4'
+  zephyr:
+    version: '4.2.99'
+    zephyr-base: 'C:/Users/urvih/munch_stepper/zephyr'
+version: '0.1.0'
 west:
-  command: C:\Users\urvih\zephyrproject\.venv\Scripts\west build -b nucleo_f767zi
-    -p
-  topdir: C:\Users\urvih\munch_stepper
-  version: 1.5.0
+  command: 'C:\Users\urvih\zephyrproject\.venv\Scripts\west build -b nucleo_f767zi -p'
+  topdir: 'C:\Users\urvih\munch_stepper'
+  version: '1.5.0'
