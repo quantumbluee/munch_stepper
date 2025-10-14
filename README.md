@@ -32,3 +32,6 @@ GRN (A-)      →    A2
 RED (B+)      →    B1  (not A2!)
 BLU (B-)      →    B2
 ```
+
+![Putty Output](image.png)  
+The code is able to get flashed with Zephyr and the output on the serial terminal looks okay. The motor however is not rotating. Tried debugging using a DMM.
