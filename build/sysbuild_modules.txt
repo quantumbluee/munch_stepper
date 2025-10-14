@@ -1,0 +1,1 @@
+"mcuboot":"C:/Users/urvih/munch_stepper/bootloader/mcuboot":"C:/Users/urvih/munch_stepper/bootloader/mcuboot/boot/zephyr/sysbuild"

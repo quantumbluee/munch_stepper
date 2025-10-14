@@ -1,0 +1,5 @@
+west:
+  command: C:\Users\urvih\zephyrproject\.venv\Scripts\west build -b native_sim app/tests
+    --build-dir build-tests
+  topdir: C:\Users\urvih\munch_stepper
+  version: 1.5.0

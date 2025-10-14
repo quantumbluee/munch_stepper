@@ -1,0 +1,5 @@
+west:
+  command: C:\Users\urvih\zephyrproject\.venv\Scripts\west build -b nucleo_f767zi
+    app -p -- -DCONFIG_STEPPER_MOCK=y
+  topdir: C:\Users\urvih\munch_stepper
+  version: 1.5.0

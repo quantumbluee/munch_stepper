@@ -1,0 +1,7 @@
+source "Kconfig.zephyr"
+config STEPPER_MOCK
+    bool "Use mocked stepper driver"
+    default n
+    help
+      Enable this to use the mocked stepper driver instead of real hardware.
+      Useful for testing without connected hardware.
